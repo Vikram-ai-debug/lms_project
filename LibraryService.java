@@ -22,6 +22,12 @@ public class LibraryService {
         }
     }
     
+        /**
+     * Finds a member by their unique ID.
+     * @param memberId The ID of the member to find
+     * @return A message indicating if member was found or ID is invalid
+     */
+    
     // Added for Lab 5 - Task 2: Member lookup feature
     public String findMemberById(String memberId) {
         if (memberId == null || memberId.isEmpty()) {
