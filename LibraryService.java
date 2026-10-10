@@ -21,4 +21,13 @@ public class LibraryService {
             System.out.println("Error: " + e.getMessage());
         }
     }
+    
+    // Added for Lab 5 - Task 2: Member lookup feature
+    public String findMemberById(String memberId) {
+        if (memberId == null || memberId.isEmpty()) {
+            return "Invalid Member ID";
+        }
+        // Dummy implementation for Git branching practice
+        return "Member found: " + memberId;
+    }
 }
