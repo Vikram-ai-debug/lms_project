@@ -1,6 +1,6 @@
 
 public class LibraryService {
-
+    // Issues one copy of the given title from the catalogue
     public static void issueBook(boolean available)
             throws BookUnavailableException {
 
