@@ -1,6 +1,7 @@
 
 public class LibraryService {
-
+    // Issues one copy of the given title; throws BookUnavailableException
+    // if no copies are left in the catalogue.
     public static void issueBook(boolean available)
             throws BookUnavailableException {
 
@@ -23,6 +24,9 @@ public class LibraryService {
     }
     /**
      * Finds member by ID - PR test
+     * Finds a member by their unique ID.
+     * @param memberId The ID of the member to find
+     * @return A message indicating if member was found or ID is invalid
      */
     // Added for Lab 5 - Task 2: Member lookup feature
     public String findMemberById(String memberId) {
@@ -31,5 +35,12 @@ public class LibraryService {
         }
         // Dummy implementation for Git branching practice
         return "Member found: " + memberId;
+    }
+
+        /**
+     * Validates book ID for Task 4
+     */
+    public boolean isValidBookId(String bookId) {
+        return bookId != null && !bookId.trim().isEmpty();
     }
 }
