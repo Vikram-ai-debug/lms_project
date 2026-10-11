@@ -1,6 +1,7 @@
 
 public class LibraryService {
-    // Issues one copy of the given title from the catalogue
+    // Issues one copy of the given title; throws BookUnavailableException
+    // if no copies are left in the catalogue.
     public static void issueBook(boolean available)
             throws BookUnavailableException {
 
