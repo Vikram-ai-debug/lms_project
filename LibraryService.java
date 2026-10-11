@@ -21,7 +21,9 @@ public class LibraryService {
             System.out.println("Error: " + e.getMessage());
         }
     }
-    
+    /**
+     * Finds member by ID - PR test
+     */
     // Added for Lab 5 - Task 2: Member lookup feature
     public String findMemberById(String memberId) {
         if (memberId == null || memberId.isEmpty()) {
