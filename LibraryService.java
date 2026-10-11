@@ -36,4 +36,11 @@ public class LibraryService {
         // Dummy implementation for Git branching practice
         return "Member found: " + memberId;
     }
+
+        /**
+     * Validates book ID for Task 4
+     */
+    public boolean isValidBookId(String bookId) {
+        return bookId != null && !bookId.trim().isEmpty();
+    }
 }
