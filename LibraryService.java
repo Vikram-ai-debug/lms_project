@@ -1,6 +1,6 @@
 
 public class LibraryService {
-
+    // Issue a single copy; throws BookUnavailableException if none left
     public static void issueBook(boolean available)
             throws BookUnavailableException {
 
